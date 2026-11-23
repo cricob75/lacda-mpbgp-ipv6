@@ -1,0 +1,13 @@
+{
+  "name": "LAC Digital Academy - MP-BGPv6 Lab",
+  "image": "ghcr.io/srl-labs/containerlab/devcontainer-dind-slim:latest",
+  "privileged": true,
+  "postCreateCommand": "docker pull frrouting/frr:latest",
+  "forwardPorts": [50080],
+  "portsAttributes": {
+    "50080": {
+      "label": "Topología Visual Containerlab",
+      "onAutoForward": "notify"
+    }
+  }
+}
