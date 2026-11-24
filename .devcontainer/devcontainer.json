@@ -9,5 +9,15 @@
       "label": "Topología Visual Containerlab",
       "onAutoForward": "notify"
     }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "srl-labs.vscode-containerlab"
+      ],
+      "settings": {
+        "containerlab.defaultSshUser": "root"
+      }
+    }
   }
 }
